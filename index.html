@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PodeDex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Pokedex</h1>
+
+        <form id="pokeForm" class="mb-5">
+            <input id="pokeNumber" type="number" placeholder="Ingrese el número del pokemon" class="form-control mb-2">
+            <div class="valid-feedback mb-2">
+                Pokemon encontrado!
+            </div>
+            <div class="invalid-feedback mb-2">
+                Ingrese solo números
+            </div>
+            <button class="btn btn-primary" type="submit">Buscar</button>
+        </form>
+
+        <section class="row">
+            <article class="col-12 col-md-6" id="pokeResult"></article>
+
+            <article class="col-12 col-md-6">
+                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+            </article>
+
+        </section>
+    </main>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.canvasjs.com/jquery.canvasjs.min.js"></script>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
